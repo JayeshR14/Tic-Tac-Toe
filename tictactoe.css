@@ -182,7 +182,6 @@ body{
 .navbar{
   display: flex;
   min-width:100%;
-  font-size:25px;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -282,6 +281,10 @@ p{
 }
 @media (max-width:500px){
   .subnav{
-    width:400px;
+    width:350px;
+    font-size: 15px;
+  }
+  .subnav a{
+    font-size: 15px;
   }
 }
