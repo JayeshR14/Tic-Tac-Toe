@@ -22,7 +22,6 @@ let win = false;
 
 const playGame = document.getElementById('playGame');
 
-
 let games = localStorage.getItem('games');
 if(games == null){
    gameObj = [];
