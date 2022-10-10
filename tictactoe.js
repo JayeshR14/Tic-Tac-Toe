@@ -1,4 +1,6 @@
 count = 0;
+let audio2 = new Audio("audio/win.wav");
+let audio3 = new Audio('audio/xoclick.wav');
 
 let tie = 0;
 
@@ -68,6 +70,7 @@ function playerPage(){
 }
 function render(){
 gameObj.filter((ele)=>{
+   audio3.play();
    document.querySelector('.s-p-1').innerHTML = ele.player1.name;
    document.querySelector('.s-p-2').innerHTML = ele.player2.name;
 
@@ -80,6 +83,7 @@ playGame.addEventListener('click',playerPage);
 let winner = document.querySelector('#winner');
 
 function PutXY(myid, myclass) {
+   audio3.play();
    if (count == 0 || count == 2 || count == 4 || count == 6 || count == 8) {
       if (myclass == 'k1-1') {
          tie+=1;
@@ -253,6 +257,7 @@ function updateScore(){
 function checkForWin() {
   
    if (m11 == m21 && m21 == m31 && m31 == m11) {
+      audio2.play();
       win = true;
       document.getElementById('l1').style.display = "block";
    setTimeout(()=>{
@@ -271,6 +276,7 @@ function checkForWin() {
       }
    }
    if(m11 == m12 && m12 == m13 && m13 == m11) {
+      audio2.play();
       win = true;
       document.getElementById('l4').style.display = "block";
       setTimeout(()=>{
@@ -289,6 +295,7 @@ function checkForWin() {
       }
    }
   if(m11 == m22 && m22 == m33 && m33 == m11) {
+   audio2.play();
       win = true;
       document.getElementById('l8').style.display = "block";
       setTimeout(()=>{
@@ -307,6 +314,7 @@ function checkForWin() {
       }
    }
    if(m33 == m32 && m32 == m31 && m31 == m33) {
+      audio2.play();
       win = true;
       document.getElementById('l6').style.display = "block";
       setTimeout(()=>{
@@ -325,6 +333,7 @@ function checkForWin() {
       }
    }
    if (m13 == m23 && m23 == m33 && m33 == m13) {
+      audio2.play();
       win = true;
       document.getElementById('l3').style.display = "block";
       setTimeout(()=>{
@@ -343,6 +352,7 @@ function checkForWin() {
       }
    }
     if (m13 == m22 && m22 == m31 && m31 == m13) {
+      audio2.play();
       win = true;
       document.getElementById('l7').style.display = "block";
       setTimeout(()=>{
@@ -361,6 +371,7 @@ function checkForWin() {
       }
    }
    if (m12 == m22 && m22 == m32 && m32 == m12) {
+      audio2.play();
       win = true;
       document.getElementById('l2').style.display = "block";
       setTimeout(()=>{
@@ -379,6 +390,7 @@ function checkForWin() {
       }
    }
    if (m21 == m22 && m22 == m23 && m23 == m21) {
+      audio2.play();
       win = true;
       document.getElementById('l5').style.display = "block";
       setTimeout(()=>{
@@ -411,6 +423,7 @@ function checkForWin() {
 
 const newbtn = document.querySelector('.newbtn');
 function showName(){
+   audio3.play();
    document.querySelector('.players').style.display = "block";
    document.querySelector('.players').style.display = "flex";
    document.querySelector('.gameControl').style.display = "none";
@@ -423,6 +436,7 @@ localStorage.setItem('games',JSON.stringify(gameObj));
 
 const restart = document.getElementById('restart');
 function restartGame(){
+   audio3.play();
    gameObj = gameObj.filter((ele)=>{
       ele.show = "false";
    })
@@ -434,7 +448,8 @@ restart.addEventListener('click',restartGame)
 
 const cwl = document.querySelector('.c-w-l');
 function closeWinList(){
-  
+   audio3.play();
+   window.location.reload();
 }
 cwl.addEventListener('click',closeWinList)
 
