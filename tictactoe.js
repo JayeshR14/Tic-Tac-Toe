@@ -46,7 +46,7 @@ gameObj.filter((ele)=>{
  });
 
 function playerPage(){
- 
+ //player
    xPlayer = document.getElementById('xPlayer').value;
    oPlayer = document.getElementById('oPlayer').value;
    if(gameObj.length == 0){
