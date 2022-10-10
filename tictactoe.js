@@ -254,10 +254,11 @@ function checkForWin() {
   
    if (m11 == m21 && m21 == m31 && m31 == m11) {
       win = true;
-      
+      document.getElementById('l1').style.display = "block";
+   setTimeout(()=>{
       document.querySelector('.winnerList').style.display = "block";
       document.querySelector('.winnerList').style.display = "flex";
-      document.getElementById('l1').style.display = "block";
+   },500);
       if (m11 == 'X' && m21 == 'X' && m31 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -271,10 +272,11 @@ function checkForWin() {
    }
    if(m11 == m12 && m12 == m13 && m13 == m11) {
       win = true;
-      
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l4').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m11 == 'X' && m12 == 'X' && m13 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -288,10 +290,11 @@ function checkForWin() {
    }
   if(m11 == m22 && m22 == m33 && m33 == m11) {
       win = true;
-      
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l8').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m11 == 'X' && m22 == 'X' && m33 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -305,10 +308,11 @@ function checkForWin() {
    }
    if(m33 == m32 && m32 == m31 && m31 == m33) {
       win = true;
-      
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l6').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m33 == 'X' && m32 == 'X' && m31 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -322,10 +326,11 @@ function checkForWin() {
    }
    if (m13 == m23 && m23 == m33 && m33 == m13) {
       win = true;
-      
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l3').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m13 == 'X' && m23 == 'X' && m33 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -339,10 +344,11 @@ function checkForWin() {
    }
     if (m13 == m22 && m22 == m31 && m31 == m13) {
       win = true;
-      
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l7').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m13 == 'X' && m22 == 'X' && m31 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -356,10 +362,11 @@ function checkForWin() {
    }
    if (m12 == m22 && m22 == m32 && m32 == m12) {
       win = true;
-    
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l2').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m12 == 'X' && m22 == 'X' && m32 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -373,10 +380,11 @@ function checkForWin() {
    }
    if (m21 == m22 && m22 == m23 && m23 == m21) {
       win = true;
-     
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
       document.getElementById('l5').style.display = "block";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       if (m21 == 'X' && m22 == 'X' && m23 == 'X') {
          winner.innerHTML = `🐱‍👤 ${xPlayer} Win 🐱‍👤`;
          player1 += 1;
@@ -391,8 +399,10 @@ function checkForWin() {
    if(tie >= 9 && win == false){
       player1 = 0;
       player2 = 0;
-      document.querySelector('.winnerList').style.display = "block";
-      document.querySelector('.winnerList').style.display = "flex";
+      setTimeout(()=>{
+         document.querySelector('.winnerList').style.display = "block";
+         document.querySelector('.winnerList').style.display = "flex";
+      },500);
       winner.innerHTML = `🐱‍👤 Tie 🐱‍👤`;
       document.querySelector('.inc').innerHTML = "+0";
 
