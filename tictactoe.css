@@ -96,7 +96,7 @@ body{
 }
 .line{
   position:absolute;
-  height:350px;
+  height:400px;
   width:3px;
   background-color: white;
 }
