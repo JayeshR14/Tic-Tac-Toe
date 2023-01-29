@@ -23,6 +23,13 @@ let m33 = 'i';
 let win = false;
 
 const playGame = document.getElementById('playGame');
+const closeBtn = document.getElementById('close');
+const instruction = document.querySelector('.outerInstruction');
+const btnInstruction = document.querySelector('#instruction');
+
+const moreApps = document.querySelector('.moreApps');
+const closeApps = document.querySelector('#closeApps')
+const moreGames = document.querySelector('#moreGames')
 
 let games = localStorage.getItem('games');
 if(games == null){
@@ -453,3 +460,20 @@ function closeWinList(){
 }
 cwl.addEventListener('click',closeWinList)
 
+closeBtn.addEventListener('click',()=>{
+   instruction.style.visibility = 'hidden';
+})
+btnInstruction.addEventListener('click',()=>{
+   instruction.style.visibility = 'visible';
+})
+
+moreGames.addEventListener('click', () => {
+   moreApps.style.visibility = 'visible';
+}); 
+
+closeApps.addEventListener('click',()=>{
+   moreApps.style.visibility = "hidden";
+})
+//how to center a div?
+// const moreApps = document.querySelector('.moreApps');
+// const closeApps = documnet.querySelector('#closeApps')

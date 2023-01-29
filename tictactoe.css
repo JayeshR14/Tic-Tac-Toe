@@ -96,40 +96,43 @@ body{
 }
 .line{
   position:absolute;
-  height:400px;
+  height:320px;
   width:3px;
   background-color: white;
 }
 #l1{
-  top:12px;
+  height:315px;
+  top:0px;
   left:50px;
   display: none;
 }
 #l2{
-  top:12px;
+  height:315px;
+  top:0px;
   left:150px;
   display: none;
 }
 #l3{
-  top:12px;
+  height:315px;
+  top:0px;
   left:250px;
   display: none;
 }
 #l4{
   rotate: 90deg;
-  top:-95px;
+  top:-110px;
   left:150px;
   display: none;
 }
 #l5{
   rotate: 90deg;
-  top:3px;
+  top:-6px;
   left:150px;
   display: none;
 }
 #l6{
   rotate: 90deg;
-  top:105px;
+  top:94px;
   left:150px;
   display: none;
 }
@@ -292,22 +295,31 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
+   height:100vh;
+   width:100%;
   background-color: rgb(11,12,16,0.98);
+  visibility: hidden;
 }
 .subApps{
   width:350px;
-  height:500px;
-  background-color: red;
+  height:400px;
+  border: 2px solid #66fcf1;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   font-size: 20px;
-  
+}
+.subApps p{
+  margin-top: 20px;
+   color:#dffbfa
+}
+.subApps a{
+  width:320;
+  margin-left: 50%;
+  color:#5fb1ab;
+  font-size: 20px;
 }
 @media (max-width:500px){
   .subnav{
@@ -329,4 +341,46 @@ p{
     width:120px;
 
   }
+}
+.outerInstruction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height:100vh;
+  width:100%;
+  background-color:rgb(11,12,16,0.98);
+  
+  visibility:hidden;
+}
+.instruction{
+  height:400px;
+  width:370px;
+  font-size: 20px;
+  padding:10;
+  color:#4ecac2;
+  background: #0B0C10;
+  border:solid #66fcf1;
+  border-radius: 20px;
+
+}
+li{
+  margin-top:20px ;
+}
+#close{
+  margin-left: 70px;
+  background:transparent;
+  outline: none;
+  border: none;
+  color:#66fcf1;
+  font-size: 20px;
+  cursor: pointer;
+}
+#closeApps{
+  background:transparent;
+  outline: none;
+  border: none;
+  color:#66fcf1;
+  font-size: 20px;
+  cursor: pointer;
 }
