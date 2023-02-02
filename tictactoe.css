@@ -119,33 +119,33 @@ body{
   display: none;
 }
 #l4{
-  rotate: 90deg;
+ transform: rotate(90deg);
   top:-110px;
   left:150px;
   display: none;
 }
 #l5{
-  rotate: 90deg;
+  transform: rotate(90deg);
   top:-6px;
   left:150px;
   display: none;
 }
 #l6{
-  rotate: 90deg;
+  transform: rotate(90deg);
   top:94px;
   left:150px;
   display: none;
 }
 #l7{
   height:360px;
-  rotate:44deg;
+  transform: rotate(44deg);
   left:150px;
   top:-32px;
   display: none;
 }
 #l8{
   height:360px;
-  rotate:-45deg;
+  transform: rotate(-45deg);
   left:148px;
   top:-32px;
   display: none;
