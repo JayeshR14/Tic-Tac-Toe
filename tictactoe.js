@@ -88,7 +88,7 @@ gameObj.filter((ele)=>{
 }
 playGame.addEventListener('click',playerPage);
 let winner = document.querySelector('#winner');
-
+//Put to the box
 function PutXY(myid, myclass) {
    audio3.play();
    if (count == 0 || count == 2 || count == 4 || count == 6 || count == 8) {
