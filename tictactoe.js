@@ -86,6 +86,7 @@ gameObj.filter((ele)=>{
 
 })
 }
+//Place X Y
 playGame.addEventListener('click',playerPage);
 let winner = document.querySelector('#winner');
 //Put to the box
